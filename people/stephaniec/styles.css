@@ -1,0 +1,28 @@
+------PRIMARY STYLES------
+html {
+    font-size: small;
+    font-weight: 0;
+}
+
+header { 
+    background: #7A9D96;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 0;
+    color: white;  
+}
+
+main {
+    background: #00303F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    color: ;
+    font-weight: 0;
+}
