@@ -1,0 +1,1 @@
+const favoriteBtn = document.querySelector("favorite-btn");
