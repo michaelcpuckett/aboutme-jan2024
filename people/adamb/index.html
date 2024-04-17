@@ -2,7 +2,7 @@
 
 <html lang="en">
   
-	<head>
+<head>
     
 	<meta charset="UTF-8">
     
@@ -10,18 +10,40 @@
     
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-<title>HTML 5 Boilerplate</title>
-    
-<style>
-    body {background-color: red}
-</style>
-  
 </head>
   
 <body>
-	<header>
+ 
+    <style>
+    @keyframes color {
+        0%   { background: #d30808; }
+        20%  { background: #ffffff; }
+        40%  { background: #3369cc; }
+        60%  { background: #ff4400; }
+        80%  { background: #ffffff; }
+        100% { background: #311fd4; }
+      }
+      
+      body {
+        background: #f7f7f7; /* Fallback */
+        animation: color 45s infinite linear;
+        text-align: center;
+        padding: 2em;
+      }
+      h1 {
+        text-align: center;
+        font-family: 'Kavoon', sans-serif;
+        font-size: 2.5em;
+        color: white;
+      }
+    
+    </style>
+    <header>
         <h1>Adam Baker</h1>
+        <title>Adam Baker About Me</title>
     </header>
+    
+    <img src="subject 2.png">
     
     <main>
         <p>My name is Adam. I'm 41 and have a dog named Ruby.</p>
@@ -29,13 +51,24 @@
     
     <button>My favorite things!</button>  
   
+
+
+
+
+
+
+
+
+
+
+
 <script>
     
     var button = document.querySelector("button");
 
     button.addEventListener("click", function(funciton) {
 
-        alert("Animals, Dogs and Drums!");
+        alert("Animals, Tech and Drums!");
    
     });
 
