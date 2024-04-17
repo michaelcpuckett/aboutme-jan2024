@@ -1,0 +1,80 @@
+:root {
+  --primary-bg-color: #C3C7CA;
+  --secondary-bg-color: #3956A2;
+  --text-color: #fff;
+  --button-bg-color: #9EA7B0;
+  --font-family: 'Inter', sans-serif;
+}
+
+.header-container, .main-container {
+  width: 100%;
+  max-width: 1196px;
+  padding: 10px;
+  background: var(--primary-bg-color);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar, .logo, .bio-container {
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+}
+
+.navbar {
+  height: 58px;
+  background: #535760;
+  border-radius: 8px;
+}
+
+.logo {
+  height: auto; /* Maintain aspect ratio */
+  max-height: 808px;
+  border-radius: 8px;
+}
+
+.main-container {
+  padding-bottom: 10px; /* Extra padding at the bottom */
+}
+
+.bio-container {
+  padding: 0 12px 0 60px;
+  background: var(--secondary-bg-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.bio-text, .button-text {
+  font-size: 32px;
+  font-family: var(--font-family);
+  line-height: 41.95px;
+  letter-spacing: 1.60px;
+}
+
+.bio-text {
+  color: var(--text-color);
+  word-wrap: break-word;
+}
+
+.button-container {
+  background: var(--button-bg-color);
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.button-text {
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .navbar, .logo, .bio-container {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .bio-text, .button-text {
+    font-size: 24px; /* Smaller text on smaller screens */
+  }
+}
