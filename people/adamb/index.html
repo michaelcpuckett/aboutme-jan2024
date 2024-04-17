@@ -2,7 +2,7 @@
 
 <html lang="en">
   
-	<head>
+<head>
     
 	<meta charset="UTF-8">
     
@@ -10,24 +10,60 @@
     
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-<title>HTML 5 Boilerplate</title>
-    
-<style>
-    body {background-color: red}
-</style>
-  
 </head>
   
 <body>
-	<header>
+ 
+    <style>
+    
+    @keyframes color {
+        0%   { background: #ff0000; }
+        20%  { background: #000000; }
+        40%  { background: #3369cc; }
+        60%  { background: #ff0000; }
+        80%  { background: #000000; }
+        100% { background: #3369cc; }
+      }
+      
+      body {
+        background: #f7f7f7; /* Fallback */
+        animation: color 60s infinite linear;
+        text-align: center;
+        padding: 2em;
+      }
+      
+      h1 {
+        text-align: center;
+        font-family: 'Kavoon', sans-serif;
+        font-size: 2.5em;
+        color: white;
+      }
+      
+      main {
+        text-align: center;
+        font-family: 'Kavoon', sans-serif;
+        font-size: 2.0em;
+        color: white;
+        }
+
+    </style>
+    
+<header>
         <h1>Adam Baker</h1>
-    </header>
+        
+        <title>About Me</title>
     
-    <main>
-        <p>My name is Adam. I'm 41 and have a dog named Ruby.</p>
-    </main>
+</header>
     
-    <button>My favorite things!</button>  
+    <img src="subject 2.png">
+    
+<main>
+        
+    <p>My name is Adam. I'm 41 and have a dog named Ruby.</p>
+    
+</main>
+    
+    <button>Click for my favorite things!</button>  
   
 <script>
     
@@ -35,7 +71,7 @@
 
     button.addEventListener("click", function(funciton) {
 
-        alert("Animals, Dogs and Drums!");
+        alert("Animals, Tech and Drums!");
    
     });
 
