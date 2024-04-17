@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, #94ddef 0%, #e6870b 100%);
+            background-repeat: repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        header {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        main {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1,
+        p,
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            border-radius: 5px;
+        }
+
+        div > img {
+            max-height: 20em;
+            padding: 45px;
+            border-radius: 60px;
+        }  
+
+        button {
+            cursor: pointer;
+            padding: 15px 30px;
+            background-color: #3a4cb3;
+            color: #fff;
+            border-radius: 20px;
+            font-size: 15px;
+            box-shadow: 0 10px 10px 10px #eff1f1;
+            transition: box-shadow 0.3s;
+        }
+
+
+        button:hover {
+            box-shadow: 0 10px 20px 25px #fac6c6;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jacob Wooldredge</h1>
+    </header>
+    <main>
+        <p>
+            My name is Jake and I am currently working as an accountant in Cincinnati, OH.</br></br>
+            I also create dashboards for my company to help with data analysis and visualization!
+        </p>
+    </main>
+    <div>
+        <button id="fun-button">Click Here!</button>
+    </div>
+    <div>
+        <img src="https://images.unsplash.com/photo-1581131659060-f0ae9114a076?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cincinnati Great American Insurance Building" />
+    </div> 
+    <script>
+
+        const button = document.getElementById('fun-button');
+
+        button.addEventListener('click', function() {
+            alert("My dog is a Corgi named Oliver\nI love to read and play music\nMy favorite movie is \'The Godfather\'")
+  });
+    </script>
+</body>
+</html>
