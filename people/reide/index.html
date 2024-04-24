@@ -3,30 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Reid's Page</title>
-    <style>
-      body {
-        margin: auto;
-        background-color: slateblue;
-      }
-      p {
-        color: white;
-      }
-      h1 {
-        color: cyan;
-      }
-    </style>
   </head>
   <body>
-    <header><h1>Reid Elsea</h1></header>
-    <main>
-      <p>Hello! My name is Reid and am working to become a web dev.</p>
-      <button onclick="favThings()">Favorite Things?</button>
-    </main>
+        <header>
+          <h1>About Me: Reid E.</h1>
+        </header>
+      </div>
+        <main>
+          <div class="bigBox">
+          <div class="box">
+          <p>
+            Hello! My name is Reid and am working to become a web dev.
+          </p>
+        </div>
+        <div class="box">
+          <button type="buton" onclick="favThings()">
+            Favorite Things?
+          </button>
+        </div>
+      </div>
+        </main>
     <script>
       function favThings() {
         alert('Cats, friends, and hanging out');
       }
     </script>
   </body>
+  <footer class="contact-container" id="contact">
+    <div class="contact-content">
+      <h2>Let's Connnect!</h2>
+      <article class="contact-item">
+        <h3>Send me an Email</h3>
+
+        <p>
+          <a href="mailto:reidelsea@gmail.com" class="btn"
+            >What do you think?</a
+          >
+        </p>
+      </article>
+
+      <article class="contact-item">
+        <h3>LinkedIn</h3>
+
+        <p>
+          <a
+            href="https://www.linkedin.com/in/c-reid-elsea-a64b40237/"
+            class="btn"
+            >Connect on LinkedIn</a
+          >
+        </p>
+      </article>
+      <article class="contact-item">
+        <h3>GitHub</h3>
+
+        <p>
+          <a href="https://github.com/Reid-E0" class="btn"
+            >Follow me on Github!</a
+          >
+        </p>
+      </article>
+    </div>
+  </footer>
 </html>

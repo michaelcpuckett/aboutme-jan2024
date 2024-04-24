@@ -1,0 +1,91 @@
+body {
+  margin: auto;
+  background-color: whitesmoke;
+  min-height: 100vh;
+  position: relative;
+}
+
+h1 {
+  color: cyan;
+}
+header {
+  background-color: magenta;
+}
+.box {
+  display: flex;
+  margin: auto;
+  width: 50%;
+}
+button {
+  margin: 25px;
+  border-radius: 15px;
+  box-shadow: 9 3 2 2px rgba(0, 149, 255, 0.15);
+  background-color: rgba(95, 230, 255, 0.3);
+}
+button:hover {
+  background-color: magenta;
+  color: cyan;
+}
+a {
+  text-decoration: none;
+}
+a:visited,
+a:link {
+  color: white;
+}
+a:hover {
+  color: white;
+  box-shadow: 0px 5px 5px white;
+}
+
+.contact-container {
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+.contact-content h2 {
+  padding: 0 15px 0 0;
+}
+.contact-content {
+  color: #f1f1f1;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+}
+
+.contact-item {
+  width: 50%;
+}
+
+.footer-container {
+  background: #1b1b27;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.footer-content {
+  font-size: 13px;
+  color: #f1f1f1;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+.bigBox {
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(78, 153, 174);
+  padding: 10px;
+  margin-top: 20%;
+}
