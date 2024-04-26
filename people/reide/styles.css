@@ -3,13 +3,14 @@ body {
   background-color: whitesmoke;
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 h1 {
-  color: cyan;
+  color: #003049;
 }
 header {
-  background-color: magenta;
+  background-color: #e9edc9;
 }
 .box {
   display: flex;
@@ -18,13 +19,16 @@ header {
 }
 button {
   margin: 25px;
-  border-radius: 15px;
-  box-shadow: 9 3 2 2px rgba(0, 149, 255, 0.15);
-  background-color: rgba(95, 230, 255, 0.3);
+  border-radius: 10px;
+  box-shadow: 9 3 2 2px rgba(204, 200, 170, 0.15);
+  background-color: #ccd5ae;
+  animation-duration: 2.5s;
+  animation-name: fadeIn;
+  color: #003049;
 }
 button:hover {
-  background-color: magenta;
-  color: cyan;
+  background-color: #00c0ff;
+  color: #fefae0;
 }
 a {
   text-decoration: none;
@@ -84,8 +88,32 @@ a:hover {
 }
 .bigBox {
   margin: auto;
-  width: 50%;
-  border: 3px solid rgb(78, 153, 174);
+  width: 25%;
+  border: 3px solid #ccd5ae;
   padding: 10px;
-  margin-top: 20%;
+  margin-top: 15%;
+}
+p,
+h1 {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
