@@ -1,21 +1,28 @@
 html {
 
-    background-color:  rgba(0, 0, 0, 0.788);;
+    background-image: url('synthBackground.jpg');
+    background-color:  rgba(86, 7, 90, 0.788);;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 h1 {
 
-    background-color: rgba(169, 169, 169, 0.853);
+    background-color: rgba(178, 2, 218, 0.853);
     display: flex;
     justify-content: center;
+
 }
 
 
 .white-text {
 
     color: antiquewhite;
+    text-shadow: 10px rgba(255, 3, 251, 0.614);
     display: flex;
     justify-content: center;
+
 }
    
 .imgs {
@@ -23,15 +30,10 @@ h1 {
     display: flex;
     justify-content: center;
    
-
 }
 
 .imgs-content {
+   
+     max-height: 100vh;
     
-    display: flex;
-    justify-content: center;
-    border: 5px solid;
-    border-color: antiquewhite;
-    
-
 }
