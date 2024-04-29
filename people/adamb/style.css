@@ -1,25 +1,24 @@
 html {
 
-    background-image: url('synthBackground.jpg');
-    background-color:  rgba(86, 7, 90, 0.788);;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color:  rgba(1, 74, 175, 0.788);;
+  
 
 }
 
 h1 {
 
-    background-color: rgba(178, 2, 218, 0.853);
+    
+    background: rgba(101, 93, 93, 0.647);
     display: flex;
     justify-content: center;
-
+    color: antiquewhite;
+    border: 2px solid antiquewhite;
+    border-radius: 5px;
 }
 
+h3 {
 
-.white-text {
-
-    color: antiquewhite;
-    text-shadow: 10px rgba(255, 3, 251, 0.614);
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
 
@@ -33,7 +32,15 @@ h1 {
 }
 
 .imgs-content {
-   
+    
      max-height: 100vh;
     
+}
+
+.white-text p {
+
+    
+    color: antiquewhite;
+    text-align: center;
+
 }
