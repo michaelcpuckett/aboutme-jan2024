@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href=".//aaronstyles.css" />
-</head>
+  </head>
 
-<body>
- 
-    <div class="header-container">
-        <div class="navbar"></div>
-        <img class="logo" src="./img/logo.jpg" alt="Company Logo">
-      </div>
-      <div class="main-container">
-        <div class="bio-container">
-          <p class="bio-text">Hello my name is Aaron and I am from Cincinnati</p>
-          <button class="button-container">
-            <span class="favorite-btn">Press Me</span>
-          </button>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">home</a></li>
+          <li><a href="#socials">socials</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <div class="hero--header">
+          <h1>Welcome to my Page!</h1>
         </div>
+        <img
+          src="./img/logo.jpg"
+          alt="Hero Logo"
+          class="hero--hero-img"
+        />
       </div>
-      
-      
+    </header>
+    <main>
+      <section class="welcome-section">
+        <p>Hello my name is Aaron Echler and I am from Cincinnati</p>
+        <button class="favorite-btn">Press Me</button>
+      </section>
+    </main>
+    <footer class="footer"></footer>
 
     <script src=".//aaronmain.js"></script>
-</body>
-
+  </body>
 </html>
