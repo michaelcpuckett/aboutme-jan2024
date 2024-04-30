@@ -1,80 +1,83 @@
-:root {
-  --primary-bg-color: #C3C7CA;
-  --secondary-bg-color: #3956A2;
-  --text-color: #fff;
-  --button-bg-color: #9EA7B0;
-  --font-family: 'Inter', sans-serif;
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
-.header-container, .main-container {
-  width: 100%;
-  max-width: 1196px;
-  padding: 10px;
-  background: var(--primary-bg-color);
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+header {
+  background: linear-gradient(180deg, #F1F1F1 0%, #8B8B8B 100%);
+  padding: 20px 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.navbar, .logo, .bio-container {
-  width: calc(100% - 20px); /* Adjust width to account for padding */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar {
-  height: 58px;
-  background: #535760;
-  border-radius: 8px;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.logo {
-  height: auto; /* Maintain aspect ratio */
-  max-height: 808px;
-  border-radius: 8px;
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
 }
 
-.main-container {
-  padding-bottom: 10px; /* Extra padding at the bottom */
+.header-logo {
+  width: 150px; /* Adjust size as needed */
 }
 
-.bio-container {
-  padding: 0 12px 0 60px;
-  background: var(--secondary-bg-color);
-  border-radius: 8px;
+.hero {
   display: flex;
   align-items: center;
-  gap: 13px;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
-.bio-text, .button-text {
-  font-size: 32px;
-  font-family: var(--font-family);
-  line-height: 41.95px;
-  letter-spacing: 1.60px;
-}
-
-.bio-text {
-  color: var(--text-color);
-  word-wrap: break-word;
-}
-
-.button-container {
-  background: var(--button-bg-color);
-  border-radius: 8px;
-  padding: 10px 20px;
-}
-
-.button-text {
+.hero h1 {
+  font-size: 64px;
   color: black;
+  text-align: center;
 }
 
-@media (max-width: 600px) {
-  .navbar, .logo, .bio-container {
-    width: 100%; /* Full width on smaller screens */
-  }
+.hero-logo {
+  width: 300px; /* Adjust size as needed */
+}
 
-  .bio-text, .button-text {
-    font-size: 24px; /* Smaller text on smaller screens */
-  }
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 250px); /* Adjust based on header size */
+}
+
+.welcome-section {
+  background: white;
+  padding: 40px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 12px;
+}
+
+.welcome-section p {
+  font-size: 32px;
+  margin: 0;
+}
+
+.welcome-section button {
+  background: #D9D9D9;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 14px;
+  cursor: pointer;
 }
