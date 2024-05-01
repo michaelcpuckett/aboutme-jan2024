@@ -10,72 +10,51 @@
     
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
     
+    <link rel="icon" href="rubyDoo.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>About Me</title>
+
 </head>
   
 <body>
  
-    <style>
-    
-    @keyframes color {
-        0%   { background: #ff0000; }
-        20%  { background: #000000; }
-        40%  { background: #3369cc; }
-        60%  { background: #ff0000; }
-        80%  { background: #000000; }
-        100% { background: #3369cc; }
-      }
-      
-      body {
-        background: #f7f7f7; /* Fallback */
-        animation: color 60s infinite linear;
-        text-align: center;
-        padding: 2em;
-      }
-      
-      h1 {
-        text-align: center;
-        font-family: 'Kavoon', sans-serif;
-        font-size: 2.5em;
-        color: white;
-      }
-      
-      main {
-        text-align: center;
-        font-family: 'Kavoon', sans-serif;
-        font-size: 2.0em;
-        color: white;
-        }
+    <h1 class="white-text">Adam Baker</h1>
+        
+    <div class="imgs">
 
-    </style>
+    <img src="slackNoBg.png" class="imgs-content">
     
-<header>
-        <h1>Adam Baker</h1>
+    </div>
+    
+    <main>
         
-        <title>About Me</title>
-    
-</header>
-    
-    <img src="subject 2.png">
-    
-<main>
+        <div class="white-text">
         
-    <p>My name is Adam. I'm 41 and have a dog named Ruby.</p>
+            <p>My name is Adam. I'm 41 and have a dog named Ruby.</p> 
+        
+        </div>
+        
+    </main>
     
-</main>
+    <div class="button-container">
     
-    <button>Click for my favorite things!</button>  
+        <button class="button">Click for my favorite things!</button>  
   
-<script>
+    </div>
+
+    <footer>
     
-    var button = document.querySelector("button");
+        <div class="white-text">
 
-    button.addEventListener("click", function(funciton) {
+            <h4> | Adam Baker 2024 | </h4>
 
-        alert("Animals, Tech and Drums!");
-   
-    });
+        </div>
 
-</script>
+    </footer>
+
+    <script src="index.js"></script>
 
 </body>
 
