@@ -86,11 +86,9 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-
-            document.getElementById('click-me-btn').addEventListener("click", () => {
-                alert("Star Trek, weight lifting, video games and baking");
+            document.getElementById('backgroundColor').addEventListener("input", (e) => {
+                document.body.style.backgroundColor = e.target.value;
             });
-
         });
     </script>
 </body>
