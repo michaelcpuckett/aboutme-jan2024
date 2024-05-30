@@ -24,6 +24,12 @@ div {
     align-items: center;
 }
 
+header {
+    width: 100%;
+    background-color: #00000065;
+    border-radius: 15px;
+}
+
 div {
     border-radius: 5px;
 }
@@ -97,4 +103,5 @@ details:hover {
 #activate {
     border-radius: 5px;
     font-weight: bold;
+    cursor: pointer;
 }

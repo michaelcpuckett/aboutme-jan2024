@@ -48,36 +48,50 @@
 
     <form id="color-change">
         <select name="color" id="color">
-            <option value="default">-- Select a color --</option>
+            <option value="">-- Select a color --</option>
             <option value="blue">Blue</option>
             <option value="red">Red</option>
             <option value="orange">Orange</option>
             <option value="purple">Purple</option>
-            <option value="pink">Pink</option>
+            <option value="green">Green</option>
             <option value="black">Black</option>
         </select>
-        <button id="activate" type="submit">Activate</button>
+        <button id="activate">Activate</button>
     </form>
 
     <script>
         
-        const colorForm = document.getElementById('color-change');
+        
         const activate = document.getElementById('activate');
         const selectElement = document.getElementById('color');
 
         selectElement.addEventListener('change', (event) => {
+
             const selectedColor = event.target.value;
+
             activate.style.backgroundColor = selectedColor;
+
+            if (!selectedColor) {
+                activate.style.color = 'black';
+            } else {
+                activate.style.color = 'white';
+            }
+
         });
 
-        colorForm.addEventListener('submit', function(event) {
+        activate.addEventListener('click', (event) => {
+
             event.preventDefault();
 
-            const selectedColor = colorForm.elements.color.value;
+            const colorForm = document.getElementById('color-change');
+            const element = document.querySelector('body');
+            const computedStyle = window.getComputedStyle(element);
+            const background = computedStyle.background;
 
-            document.body.style.backgroundColor = selectedColor;
+            const selectedColor = colorForm.elements.color.value || background;
 
-            console.log(selectedColor);
+            document.body.style.background = selectedColor;
+
         });
 
     </script>
