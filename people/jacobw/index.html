@@ -4,64 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: radial-gradient(circle, #94ddef 0%, #e6870b 100%);
-            background-repeat: repeat;
-            background-size: cover;
-            background-position: center center;
-        }
-
-        header {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        main {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        h1,
-        p,
-        div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        div {
-            border-radius: 5px;
-        }
-
-        div > img {
-            max-height: 20em;
-            padding: 45px;
-            border-radius: 60px;
-        }  
-
-        button {
-            cursor: pointer;
-            padding: 15px 30px;
-            background-color: #3a4cb3;
-            color: #fff;
-            border-radius: 20px;
-            font-size: 15px;
-            box-shadow: 0 10px 10px 10px #eff1f1;
-            transition: box-shadow 0.3s;
-        }
-
-
-        button:hover {
-            box-shadow: 0 10px 20px 25px #fac6c6;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="./resources/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>Jacob Wooldredge</h1>
@@ -72,19 +20,81 @@
             I also create dashboards for my company to help with data analysis and visualization!
         </p>
     </main>
+
     <div>
-        <button id="fun-button">Click Here!</button>
+        <img src="./resources/images/81oP-NzMb7L._AC_UF894,1000_QL80_.jpg" alt="Cincinnati skyline at dusk" />
     </div>
-    <div>
-        <img src="https://images.unsplash.com/photo-1581131659060-f0ae9114a076?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cincinnati Great American Insurance Building" />
-    </div> 
+
+    <details>
+        <summary>My Favorite Things</summary>
+        <ul id="favorite-things">
+            <li class="card">
+                <img src="./resources/images/pembrokewelshcorgi.jpg" alt="Pembroke Welsh Corgi in a grassy field with small yellow flowers">
+                <h2>Pembroke Welsh Corgis</h2>
+                <p>The best dogs in the world!</p>
+            </li>
+            <li class="card">
+                <img src="./resources/images/medeskimartinwood.jpg" alt="Medeksi Martin & Wood playing music on stage">
+                <h2>Music</h2>
+                <p>I grew up playing piano and eventually learned guitar.</p>
+            </li>
+            <li class="card">
+                <img src="./resources/images/stevebuscemi.jpg" alt="Steve Buscemi with a glum expression">
+                <h2>Steve Buscemi</h2>
+                <p>The greatest actor of all time.</p>
+            </li>
+        </ul>
+    </details>
+
+    <form id="color-change">
+        <select name="color" id="color">
+            <option value="">-- Select a color --</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="purple">Purple</option>
+            <option value="green">Green</option>
+            <option value="black">Black</option>
+        </select>
+        <button id="activate">Activate</button>
+    </form>
+
     <script>
+        
+        
+        const activate = document.getElementById('activate');
+        const selectElement = document.getElementById('color');
 
-        const button = document.getElementById('fun-button');
+        selectElement.addEventListener('change', (event) => {
 
-        button.addEventListener('click', function() {
-            alert("My dog is a Corgi named Oliver\nI love to read and play music\nMy favorite movie is \'The Godfather\'")
-  });
+            const selectedColor = event.target.value;
+
+            activate.style.backgroundColor = selectedColor;
+
+            if (!selectedColor) {
+                activate.style.color = 'black';
+            } else {
+                activate.style.color = 'white';
+            }
+
+        });
+
+        activate.addEventListener('click', (event) => {
+
+            event.preventDefault();
+
+            const colorForm = document.getElementById('color-change');
+            const element = document.querySelector('body');
+            const computedStyle = window.getComputedStyle(element);
+            const background = computedStyle.background;
+
+            const selectedColor = colorForm.elements.color.value || background;
+
+            document.body.style.background = selectedColor;
+
+        });
+
     </script>
+
 </body>
 </html>
