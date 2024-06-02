@@ -1,11 +1,15 @@
 body {
   margin: auto;
   background-color: whitesmoke;
-  min-height: 100vh;
+  min-height: calc(100vh - 11rem);
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-bottom: 12rem;
 }
-
+#intro {
+  font-size: 1.85em;
+}
 h1 {
   color: #003049;
 }
@@ -15,9 +19,9 @@ header {
 .box {
   display: flex;
   margin: auto;
-  width: 50%;
+  width: 100%;
 }
-button {
+/*old button {
   margin: 25px;
   border-radius: 10px;
   box-shadow: 9 3 2 2px rgba(204, 200, 170, 0.15);
@@ -29,7 +33,7 @@ button {
 button:hover {
   background-color: #00c0ff;
   color: #fefae0;
-}
+} */
 a {
   text-decoration: none;
 }
@@ -41,59 +45,51 @@ a:hover {
   color: white;
   box-shadow: 0px 5px 5px white;
 }
-
+@media screen and (min-width: 650px) {
+  .contact-container {
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 8.5rem;
+  }
+}
 .contact-container {
   background: gray;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 48px 0;
-  position: absolute;
-  bottom: 0;
+  position: fixed;
   width: 100%;
-  height: 2.5rem;
-}
-.contact-content h2 {
-  padding: 0 15px 0 0;
+  bottom: 0;
+  height: 5.5rem;
 }
 .contact-content {
   color: #f1f1f1;
-  width: 100%;
+  width: 75%;
   max-width: 1000px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  padding: 4px;
+  gap: 10%;
 }
 
 .contact-item {
   width: 50%;
 }
 
-.footer-container {
-  background: #1b1b27;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 0;
-}
-
-.footer-content {
-  font-size: 13px;
-  color: #f1f1f1;
-  width: 100%;
-  max-width: 1000px;
-  text-align: center;
-}
 .bigBox {
   margin: auto;
-  width: 25%;
+  width: 50%;
   border: 3px solid #ccd5ae;
-  padding: 10px;
-  margin-top: 15%;
+  padding-right: 55px;
+  padding-left: 55px;
 }
-p,
+.box,
 h1 {
   animation-duration: 2s;
   animation-name: slidein;
@@ -116,4 +112,31 @@ h1 {
   to {
     opacity: 1;
   }
+}
+img {
+  width: 125px;
+  height: 175px;
+}
+li {
+  list-style: none;
+}
+summary {
+  padding-bottom: 15px;
+  font-size: 1.2rem;
+}
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 15px;
+  width: 100%;
+  justify-content: space-between;
+}
+.card {
+  flex: 0 1 calc(25% - 1em);
+  border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: 5px;
 }
