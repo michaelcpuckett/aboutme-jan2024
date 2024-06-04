@@ -35,7 +35,6 @@ div {
 }
 
 div > img {
-    max-height: 20em;
     padding: 45px;
     border-radius: 60px;
     filter: drop-shadow(5px 5px 10px #fde453);
@@ -104,4 +103,17 @@ details:hover {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    div > img {
+        max-width: 25em;
+        padding: 45px;
+        border-radius: 60px;
+        filter: drop-shadow(5px 5px 10px #fde453);
+    }
+
+    #favorite-things {
+        flex-flow: column;
+    }
 }

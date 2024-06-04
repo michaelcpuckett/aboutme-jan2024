@@ -61,7 +61,6 @@
 
     <script>
         
-        
         const activate = document.getElementById('activate');
         const selectElement = document.getElementById('color');
 
@@ -87,7 +86,6 @@
             const element = document.querySelector('body');
             const computedStyle = window.getComputedStyle(element);
             const background = computedStyle.background;
-
             const selectedColor = colorForm.elements.color.value || background;
 
             document.body.style.background = selectedColor;
