@@ -28,3 +28,11 @@
   - When the user selects a color, the background color of the page should change
     - You will need a `<script>` tag with JavaScript in it
   - The text color may need to change as well
+
+## Use an API
+
+- Use the [Dog API](https://random.dog/woof.json) to display a random dog
+  - Create a `<button>` tag that says "Get Random Dog"
+  - When the button is clicked, a random dog image should be displayed from the API
+    - You will need a `<script>` tag with JavaScript in it
+  - [BONUS] As each image is retrieved, add it to a slideshow so that you can arrow through them
