@@ -21,9 +21,9 @@
         </p>
     </main>
 
-    <div>
-        <img src="./resources/images/81oP-NzMb7L._AC_UF894,1000_QL80_.jpg" alt="Cincinnati skyline at dusk" />
-    </div>
+    <button id="dog">Get Random Dog</button>
+    <div id="image-container"></div>
+    <img id="skyline" src="./resources/images/81oP-NzMb7L._AC_UF894,1000_QL80_.jpg" alt="Cincinnati skyline at dusk" />
 
     <details>
         <summary>My Favorite Things</summary>
@@ -59,40 +59,7 @@
         <button id="activate">Activate</button>
     </form>
 
-    <script>
-        
-        const activate = document.getElementById('activate');
-        const selectElement = document.getElementById('color');
-
-        selectElement.addEventListener('change', (event) => {
-
-            const selectedColor = event.target.value;
-
-            activate.style.backgroundColor = selectedColor;
-
-            if (!selectedColor) {
-                activate.style.color = 'black';
-            } else {
-                activate.style.color = 'white';
-            }
-
-        });
-
-        activate.addEventListener('click', (event) => {
-
-            event.preventDefault();
-
-            const colorForm = document.getElementById('color-change');
-            const element = document.querySelector('body');
-            const computedStyle = window.getComputedStyle(element);
-            const background = computedStyle.background;
-            const selectedColor = colorForm.elements.color.value || background;
-
-            document.body.style.background = selectedColor;
-
-        });
-
-    </script>
+<script src="./resources/js/main.js"></script>
 
 </body>
 </html>
