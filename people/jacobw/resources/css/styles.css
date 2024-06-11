@@ -30,16 +30,35 @@ header {
     border-radius: 15px;
 }
 
-div {
-    border-radius: 5px;
-}
-
-div > img {
-    max-height: 20em;
+#skyline {
     padding: 45px;
     border-radius: 60px;
     filter: drop-shadow(5px 5px 10px #fde453);
-}  
+}
+
+#dog {
+    border-radius: 5px;
+    width: 10em;
+    height: 2em;
+    font-weight: 700;
+    background-color: #3b78b1;
+    filter: drop-shadow(2px 2px 2px #fde453);
+}
+
+#dog:hover {
+    filter: drop-shadow(4px 4px 4px #fde453);
+    cursor: pointer;
+}
+
+#image-container {
+    margin: 15px;
+}
+
+#random-dog {
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 500px;
+}
 
 details {
     text-align: center;
@@ -104,4 +123,17 @@ details:hover {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    #skyline {
+        max-width: 25em;
+        padding: 45px;
+        border-radius: 60px;
+        filter: drop-shadow(5px 5px 10px #fde453);
+    }
+
+    #favorite-things {
+        flex-flow: column;
+    }
 }
