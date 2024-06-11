@@ -36,3 +36,13 @@
   - When the button is clicked, a random dog image should be displayed from the API
     - You will need a `<script>` tag with JavaScript in it
   - [BONUS] As each image is retrieved, add it to a slideshow so that you can arrow through them
+
+## Dark Mode Toggle
+
+- Create a widget that toggles between dark mode and light mode
+  - When dark mode is enabled, the background should be dark and the text should be light
+  - When dark mode is disabled, the background should be light and the text should be dark
+    - You could use a `<button>` tag or an `<input type="checkbox">` tag for the widget
+    - You may need to use CSS variables
+    - You will need a `<script>` tag with JavaScript in it
+    - Use the `localStorage` API to remember the user's preference
