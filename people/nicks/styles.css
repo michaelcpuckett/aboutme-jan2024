@@ -123,3 +123,33 @@ header {
         margin-right: 0;
     }
 }
+
+.doggo-section .gallery {
+    max-height: 250px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-bottom: 1rem;
+}
+
+.doggo-section .gallery img, .doggo-section .gallery video {
+    max-height: 250px;
+    width: auto;
+}
+
+.test .gallery {
+    max-height: 250px;
+    display: flex;
+    margin: 1rem 0;
+}
+
+.test .gallery .gallery-item {
+    border: 1px solid black;
+    width: 33%;
+    height: 250px;
+}
+
+.test .gallery .gallery-item img, .test .gallery .gallery-item video {
+    max-width: 100%;
+    max-height: 100%;
+}
