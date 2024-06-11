@@ -81,18 +81,40 @@ document.addEventListener("DOMContentLoaded", () => {
         doggoGallery.scrollLeft = rect.right;
     }
 
-    function updateDoggos() {
-        const currentDoggo = allDoggos[currentIndex];
+    // function updateDoggos() {
+    //     const currentDoggo = allDoggos[currentIndex];
 
-        const gallery = document.querySelectorAll('.test .gallery .gallery-item');
+    //     const gallery = document.querySelectorAll('.test .gallery .gallery-item');
 
-        console.log(gallery);
+    //     console.log(gallery);
 
-        gallery[1].innerHTML = "";
-        gallery[1].appendChild(currentDoggo);
+    //     gallery[1].innerHTML = "";
+    //     gallery[1].appendChild(currentDoggo);
 
+    // }
+
+    const modeToggle = document.getElementById('colorModeToggle');
+    const main = document.getElementsByTagName('main')[0];
+    const toggle = {'dark': 'light', 'light': 'dark'};
+
+    if(!localStorage.getItem('colorMode')) {
+        localStorage.setItem('colorMode', 'light');
     }
 
+    if(localStorage.getItem('colorMode')) {
+        main.classList.add(localStorage.getItem('colorMode'));
+        modeToggle.classList.add(localStorage.getItem('colorMode'));
+    }
     
+    modeToggle.addEventListener('click', () => {
+        const prev = localStorage.getItem('colorMode');
+        const next = toggle[localStorage.getItem('colorMode')];
+
+        localStorage.setItem('colorMode', next);
+        main.classList.replace(prev, next);
+        modeToggle.classList.replace(prev, next);
+
+
+    });
 
 });

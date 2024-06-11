@@ -1,3 +1,8 @@
+:root {
+    --dark-mode-bg: rgb(22, 19, 18);
+    --dark-mode-color: #fff;
+}
+
 body {
     background-color: #023e8a;
     font-family: Arial, Helvetica, sans-serif;
