@@ -1,3 +1,8 @@
+:root {
+    --dark-mode-bg: rgb(22, 19, 18);
+    --dark-mode-color: #fff;
+}
+
 body {
     background-color: #023e8a;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,6 +16,11 @@ main {
     min-height: calc(100vh - 4rem);
     /* border: 1px solid #eee; */
     box-shadow: 0 0 .25rem #000;
+    transition: background-color, color .5s;
+}
+main.dark {
+    background-color: var(--dark-mode-bg);
+    color: var(--dark-mode-color);
 }
 header {
     text-align: center;
@@ -122,4 +132,56 @@ header {
         width: calc(33% - 1rem - 2px);
         margin-right: 0;
     }
+}
+
+.doggo-section .gallery {
+    max-height: 250px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-bottom: 1rem;
+}
+
+.doggo-section .gallery img, .doggo-section .gallery video {
+    max-height: 250px;
+    width: auto;
+}
+
+.test .gallery {
+    max-height: 250px;
+    display: flex;
+    margin: 1rem 0;
+}
+
+.test .gallery .gallery-item {
+    border: 1px solid black;
+    width: 33%;
+    height: 250px;
+}
+
+.test .gallery .gallery-item img, .test .gallery .gallery-item video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#colorModeToggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.25rem;
+    padding: .5rem;
+    border: 0;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+#colorModeToggle::after {
+    content: 'Light Mode'
+}
+#colorModeToggle.dark::after {
+    content: 'Dark Mode'
+}
+
+#colorModeToggle.dark {
+    background-color: var(--dark-mode-bg);
+    color: var(--dark-mode-color);
 }

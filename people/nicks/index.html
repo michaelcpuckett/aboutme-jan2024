@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nick Swinford | About Me</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
+
+    <button id="colorModeToggle"></button>
+
+
     <main class="rounded">
         <header>
             <h1>Nick Swinford</h1>
@@ -14,7 +19,7 @@
 
         <div class="d-flex">
             <div class="flex-2">
-                <img src="/people/nicks/img/2162fc37d88721ece94f8e4330ebfd5d.jpg" alt="AI generated image of Nick Swinford" class="d-block rounded w-100">
+                <img src="img/2162fc37d88721ece94f8e4330ebfd5d.jpg" alt="AI generated image of Nick Swinford" class="d-block rounded w-100">
             </div>
             <div class="flex-4">
                 <p><strong>Hey there, I'm Nick.</strong> I'm originally from Chicago, but I've lived in Kentucky most of my life. I have
@@ -34,12 +39,12 @@
 
         
         <section class="cards-section">
-            <details open>
+            <details>
                 <summary class="cards-title"><h2>My Favorite Things</h2></summary>
 
                 <ul class="cards">
                     <li class="card">
-                        <img src="/people/nicks/img/star-trek.png" alt="Star Trek logo on a space background">
+                        <img src="img/star-trek.png" alt="Star Trek logo on a space background">
                         <div>
                             <h2>Star Trek</h2>
                             <p>Been a fan of Star Trek all my life. I remember 
@@ -48,7 +53,7 @@
                         </div>
                     </li>
                     <li class="card">
-                        <img src="/people/nicks/img/weightlifting.png" alt="A man getting ready to deadlift">
+                        <img src="img/weightlifting.png" alt="A man getting ready to deadlift">
                         <div>
                             <h2>Weight Lifting</h2>
                             <p>Started weight lifting a couple years ago and I love how it
@@ -59,7 +64,7 @@
                         </div>
                     </li>
                     <li class="card">
-                        <img src="/people/nicks/img/video-games.png" alt="Grid of video game art work">
+                        <img src="img/video-games.png" alt="Grid of video game art work">
                         <div>
                             <h2>Video Games</h2>
                             <p>My first video game was the original Age of Empires when I was a kid.
@@ -69,7 +74,7 @@
                         </div>
                     </li>
                     <li class="card">
-                        <img src="/people/nicks/img/baking.png" alt="Chocolate chip cookies being pulled out of the oven">
+                        <img src="img/baking.png" alt="Chocolate chip cookies being pulled out of the oven">
                         <div>
                             <h2>Baking</h2>
                             <p>I love baking and experimenting with new dishes. I've baked cakes,
@@ -82,14 +87,36 @@
             </details>
         </section>
 
-    </main>
+        <section class="doggo-section">
+            <h2>Doggos & Puppers</h2>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            document.getElementById('backgroundColor').addEventListener("input", (e) => {
-                document.body.style.backgroundColor = e.target.value;
-            });
-        });
-    </script>
+            <div class="gallery">
+
+            </div>
+
+            <button id="getDoggo">Get Random Doggo 🐶</button>
+
+            <button id="getCat">Get Random Cat 😺</button>
+
+        </section>
+
+        <!-- <section class="test">
+            <div class="gallery">
+
+                <div class="gallery-item">
+
+                </div>
+                <div class="gallery-item">
+
+                </div>
+                <div class="gallery-item">
+
+                </div>
+
+            </div>
+
+        </section> -->
+
+    </main>
 </body>
 </html>
