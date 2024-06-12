@@ -11,7 +11,7 @@ body {
     color: #eff1f1;
 }
 
-main p {
+p {
     font-weight: 700;
     text-align: center;
 }
@@ -112,6 +112,18 @@ details:hover {
     border-top: 2px solid #000;
     padding-top: 20px;
     width: 100%;
+}
+
+.toggle {
+    background: #000;
+    border-radius: 0 20px 0 0;
+    padding: 8px;
+    margin-top: 15px;
+    width: 10%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 }
 
 #color-change {
