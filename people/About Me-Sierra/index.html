@@ -1,24 +1,47 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>About Sierra B.</title>
-    <style>
-      body {
-        background-color: blueviolet;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Sierra B.</h1>
-    <p>Hi, I'm Sierra. I am a front end software student.</p>
-    <button id="button">Click Me</button>
-    <script>
-      const button = document.getElementById('button');
-      button.addEventListener('click', function() {
-      alert('I have a Corgi.')
-      alert('I love to hike.')
-      
-});
-  </script>
-  </body>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Sierra Berkemeier</h1>
+            <div class="summary-container">
+                <div class="summary">
+                    Hi! I'm Sierra named after Sierra Nevada (the mountains not the IPA). I currently work at Southgate House Revival, it Rocks! My favorite things include: kayaking, hiking & listening to live music.
+                </div>
+                <div class="reflection">
+                    Hi! I'm Sierra named after Sierra Nevada (the mountains not the IPA). I currently work at Southgate House Revival, it Rocks! My favorite things include: kayaking, hiking & listening to live music.
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="cards">
+        <li class="card">
+            <img src="images/Kayaking.jpg" alt="A picture of my dog and I kayaking at AJ Jolly">
+            <div class="card-text">
+                <p>Kayaking is my favorite water sport. I could spend hours paddling around a lake, looking at the sky. I also love floating down streams with my friends.</p>
+            </div>
+        </li>
+        <li class="card">
+            <img src="images/Hiking Fall.jpg" alt="A picture of my dog and friend hiking in the fall">
+            <div class="card-text">
+                <p>When I want to feel grounded, I take hikes. Walking through nature brings me a peace. I hike throughout the greater Cincinnati area and northern Kentucky at least twice a week.</p>
+            </div>
+        </li>
+        <li class="card">
+            <img src="images/Live Music.jpg" alt="Me at the front of the stage VERY excited to see this band">
+            <div class="card-text">
+                <p>Yup, that's me... The first concert I went to was Taking Back Sunday at the Thompson House. I was hooked to live music ever since. I have been to every Warped Tour in Cincinnati, starting at the age of 13 (BRING IT BACK please). Now I work at SGHR where I have seen my favorite band, Margot and the Nuclear So & So's. "Don't stop me now", this Saturday I'm going to Chappell Roan live FOR 10 DOLLARS. Can you believe it!?</p>
+            </div>
+        </li>
+    </ul>
+</body>
 </html>
