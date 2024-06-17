@@ -1,0 +1,87 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background: linear-gradient(180deg, #F1F1F1 0%, #8B8B8B 100%);
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.header-img {
+  width: 8rem; /* Adjust size as needed */
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0rem;
+  padding: 2rem;
+}
+
+.hero--header{
+  margin: 2rem;
+}
+
+.hero hero--hero-header, h1{
+  font-size: 4rem;
+  color: black;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 250px); /* Adjust based on header size */
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  padding: 4rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 12px;
+}
+
+.welcome-section p {
+  font-size: 2rem;
+  margin: 2em;
+}
+
+.welcome-section button {
+  background: #D9D9D9;
+  border: none;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
