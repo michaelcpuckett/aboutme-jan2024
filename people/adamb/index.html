@@ -1,61 +1,71 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  
 <head>
-    
-	<meta charset="UTF-8">
-    
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="rubyDoo.ico" type="image/x-icon">
-    
     <link rel="stylesheet" href="style.css">
-
     <title>About Me</title>
-
 </head>
-  
 <body>
- 
-    <h1 class="white-text">Adam Baker</h1>
-        
+    <header>
+        <form class="white-text">
+            <input id="colorPicker" name="Color Picker" type="color"/> Background Color Picker
+        </form>
+        <h1 class="white-text">Adam Baker</h1>
+    </header>
     <div class="imgs">
-
-    <img src="slackNoBg.png" class="imgs-content">
-    
+        <img src="slackNoBg.png" class="imgs-content">
     </div>
-    
     <main>
-        
         <div class="white-text">
+            <p>My name is Adam.  Welcome to my About Me!</p>
         
-            <p>My name is Adam. I'm 41 and have a dog named Ruby.</p> 
+        <details class="white-text">
+            <summary>My favorite things!</summary>
+            <div class="cardContainer">
+                <ul id="cards">
+                    <li class="card" id="card1">
+                        <div class="card-body">
+                            <h2>Technology</h2>
+                            <img src="tech.jpeg">
+                            <p>I like computing, robots and lasers!</p>
+                        </div>
+                    </li>
+                    <li class="card" id="card2">
+                        <div class="card-body">
+                            <h2>Drumming</h2>
+                            <img src="drumming.jpeg">
+                            <p>I love music and percussion!</p>
+                        </div>
+                    </li>
+                    <li class="card" id="card3">
+                        <div class="card-body" text="white-text">
+                            <h2>Animals</h2>
+                            <img src="animals.jpeg">
+                            <p>I love animals like my dog <a href="https://arbaker82.github.io/rubyDoo/">Ruby-Doo!</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </details>
         
+        <div class="buttonContainer">
+            <button id="fetchDogImage">Show me a dog!</button> 
         </div>
         
+        <div id="imageContainer">
+            <div id="dogImages" src="" alt="Random Dog"></div>
+        </div>
     </main>
     
-    <div class="button-container">
-    
-        <button class="button">Click for my favorite things!</button>  
-  
-    </div>
-
     <footer>
-    
         <div class="white-text">
-
-            <h4> | Adam Baker 2024 | </h4>
-
+            <h4>| Adam Baker 2024 |</h4>
         </div>
-
     </footer>
-
-    <script src="index.js"></script>
-
+    
+    <script src="script.js"></script>
 </body>
-
 </html>
