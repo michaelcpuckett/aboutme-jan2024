@@ -1,0 +1,134 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to top,  #984e82, #99cbd2);
+    font-family: "Shadows Into Light Two", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Jumbotron */
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url('images/mountain-lake-scene.jpg') no-repeat center center;
+    background-size: cover;
+    color: #984e82;
+    height: 100vh;
+    font-size: larger;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+/* Image Overlay-For Text */
+.jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.642);
+    z-index: 1;
+}
+
+.summary-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.summary {
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    font-size: 18px;
+    color: #984e82;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Creating the reflection */
+.reflection {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    transform: scaleY(-1);
+    opacity: 0.5;
+    background: rgba(104, 100, 100, 0.005);
+    padding: 20px;
+    font-size: 18px;
+    color:  #984e82;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Fading out the reflection */
+    mask-image: linear-gradient(to bottom, rgb(9, 1, 1), rgb(15, 0, 0));
+    -webkit-mask-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(224, 215, 215));
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 600px) {
+    .summary, .reflection {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Cards */
+.cards {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to top,  #984e82, #99cbd2);;
+}
+
+.card img {
+    max-width: 150px;
+    border-radius: 8px;
+    margin: 0 20px;
+}
+
+.card:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.card-text {
+    max-width: 600px;
+    text-align: left;
+    color: black;
+    font-weight: 600;
+    
+}
+
+
+
+
+
+
+
