@@ -5,14 +5,14 @@ html {
 }
 
 header { 
-    background: #7A9D96;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8px 0;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 0;
-    color: white;  
+    font-weight: 1;
+    color: #7A9D96; 
 }
 
 main {
@@ -23,6 +23,43 @@ main {
     padding: 8px 0;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
-    color: ;
+    color: white;
     font-weight: 0;
+}
+
+------------CARDS--------------
+
+.hobbycards {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 100%;
+}
+
+.card {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    border: 1px solid #000;
+    margin: 5em 0;
+    padding: 5;
+    object-fit: contain;
+    text-align: center;
+    background-color: #00303F;
+    color: #7A9D96;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1;
+    color: white;
 }
