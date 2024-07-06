@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="jumbotron">
@@ -43,5 +44,42 @@
             </div>
         </li>
     </ul>
+
+    <div class="music-header">
+        <h2 id="music-head">My Favorite Tunes</h2>
+    </div>
+    <div class="music-summary">
+        <h3 id="mp4-summary">Click below to play some of my favorite tunes!</h3>
+    </div>
+    
+    <div class="music-container">
+        <div class="img-container">
+            <img src="images/TBS-Cover.jpg" alt="Taking Back Sunday Album Cover" id="cover" />
+        </div>
+    
+        <div class="music-info">
+            <h4 id="title">You're So Last Summer</h4>
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+        </div>
+    
+        <audio src="music/Taking Back Sunday – You're So Last Summer.mp4" id="audio"></audio>
+    
+        <div class="navigation">
+            <button id="previous" class="action-btn">
+                <i class="fa-solid fa-backward-fast"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fa-solid fa-play"></i>
+            <button id="next" class="action-btn">
+                <i class="fa-solid fa-forward-fast"></i>
+            </button>
+        </div>
+    </div>
+    
+
+
+    <script src="script.js"></script>    
 </body>
 </html>
